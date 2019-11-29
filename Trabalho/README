@@ -1,0 +1,27 @@
+Alunos:
+Victor Azevedo de Oliveira
+Victor Dornelas Honorato
+
+
+Codigo-Fonte: https://www.modernescpp.com/index.php/race-condition-versus-data-race (Disponibilizado também no Pdf do Projeto Final )
+Fontes de Pesquisa: 
+pthread.h ---> https://pubs.opengroup.org/onlinepubs/7908799/xsh/pthread.h.html
+semaphore.h --> https://pubs.opengroup.org/onlinepubs/009695399/basedefs/semaphore.h.html
+		https://pubs.opengroup.org/onlinepubs/7908799/xsh/semaphore.h.html
+stdbool.h ---> https://www.ime.usp.br/~pf/algoritmos/apend/stdbool.h.html
+
+
+1-
+Como Compilar: Salve o arquivo disponibilizado no diretório desejado. Após salvar abra o Terminal(cmd ou powershell no caso do Windows e terminal Linux do proprio Linux).
+Com o Comando "cd +pasta", selecione a pasta desejada e aperte enter;
+Digite o comando "gcc projeto.c -o projeto -lpthread" (funciona em todos os sistemas operacionais) e aperte enter;
+
+2- 
+Para executar o programa, digite o comando "./projeto" e o programa será executado;
+
+
+3- 
+O programa irá fazer 100 transações simultâneas da conta1 para conta2, onde ambas começam com R$ 500 e cada transacao custa R$ 10.
+As transações são aleatórias e são ocorridas em ambas as contas para receber mais de uma tranferência simultânea
+Caso o saldo fique abaixo do valor, será notificado "Saldo insuficiente".
+
